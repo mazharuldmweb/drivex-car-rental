@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveX – Premium Car Rental</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/input.css">
+</head>
+
+<body class="bg-dark">
+
+    <!-- ===== TOPBAR ===== -->
+    <div class="bg-red-600 text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+            <div class="flex gap-6 items-center">
+                <span><i class="bi bi-telephone-fill mr-1"></i> +880 1700-000000</span>
+                <span class="hidden md:inline"><i class="bi bi-envelope-fill mr-1"></i> rent@drivex.com</span>
+            </div>
+            <div class="flex gap-6 items-center">
+                <span><i class="bi bi-clock-fill mr-1"></i> 24/7 Service Available</span>
+                <span class="hidden md:inline"><i class="bi bi-geo-alt-fill mr-1"></i> Dhaka, Bangladesh</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="sticky top-0 z-50 bg-dark-2 border-b border-white/5 shadow-2xl" style="background:#0d0d10;">
+        <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-2">
+                <div class="bg-red-500 text-white font-cond font-black text-xl px-3 py-1 tracking-widest">DRIVE
+                </div>
+                <div class="font-cond font-black text-2xl tracking-[4px] text-white">X</div>
+            </a>
+
+            <!-- Nav links -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="#home"
+                    class="nav-link text-white/70 hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors">Home</a>
+                <a href="#fleet"
+                    class="nav-link text-white/70 hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors">Our
+                    Fleet</a>
+                <a href="#services"
+                    class="nav-link text-white/70 hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors">Services</a>
+                <a href="#why"
+                    class="nav-link text-white/70 hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors">Why
+                    Us</a>
+                <a href="#testimonials"
+                    class="nav-link text-white/70 hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors">Reviews</a>
+                <a href="#contact"
+                    class="nav-link text-white/70 hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA -->
+            <div class="flex items-center gap-3">
+                <a href="tel:+8801700000000"
+                    class="hidden md:flex items-center gap-2 border border-white/20 text-white/70 hover:text-white hover:border-white/40 text-xs px-4 py-2.5 tracking-wider uppercase font-semibold transition-all">
+                    <i class="bi bi-telephone-fill text-red-500"></i> Call Now
+                </a>
+                <a href="#search"
+                    class="btn-glow bg-red-500 hover:bg-red-600 text-white text-xs px-5 py-2.5 font-bold tracking-wider uppercase">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero-bg">
+        <div class="hero-bg-overlay min-h-screen flex items-center">
+            <div class="max-w-7xl mx-auto px-6 py-24 w-full">
+                <div class="max-w-2xl">
+                    <!-- Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 border border-red-500/40 text-red-400 text-xs tracking-[4px] uppercase font-semibold px-4 py-2 mb-8">
+                        <i class="bi bi-stars text-red-500"></i> Premium Car Rental — Bangladesh
+                    </div>
+                    <!-- Title -->
+                    <h1 class="font-cond font-black text-white leading-none mb-6"
+                        style="font-size: clamp(3.5rem, 8vw, 6.5rem); line-height:0.95; letter-spacing:-1px;">
+                        DRIVE <span class="text-red-500 italic">YOUR</span><br />
+                        DREAM<br />
+                        <span class="text-white/30">CAR TODAY</span>
+                    </h1>
+                    <p class="text-white/60 text-lg leading-relaxed mb-10 max-w-md">
+                        Premium vehicles. Transparent pricing. Doorstep delivery. Experience the road like never
+                        before with DriveX.
+                    </p>
+                    <!-- Buttons -->
+                    <div class="flex flex-wrap gap-4 mb-14">
+                        <a href="#search"
+                            class="btn-glow bg-red-500 hover:bg-red-600 text-white px-8 py-4 font-bold text-sm tracking-widest uppercase">
+                            🚗 Rent a Car
+                        </a>
+                        <a href="#fleet"
+                            class="border-2 border-white/30 hover:border-white text-white px-8 py-4 font-bold text-sm tracking-widest uppercase transition-all hover:bg-white/5">
+                            View Fleet →
+                        </a>
+                    </div>
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 max-w-md">
+                        <div class="stat-card rounded-xl p-4 text-center">
+                            <div class="font-cond font-black text-3xl text-red-500">500+</div>
+                            <div class="text-white/40 text-xs uppercase tracking-widest mt-1">Vehicles</div>
+                        </div>
+                        <div class="stat-card rounded-xl p-4 text-center">
+                            <div class="font-cond font-black text-3xl text-red-500">15K+</div>
+                            <div class="text-white/40 text-xs uppercase tracking-widest mt-1">Rentals</div>
+                        </div>
+                        <div class="stat-card rounded-xl p-4 text-center">
+                            <div class="font-cond font-black text-3xl text-red-500">4.9★</div>
+                            <div class="text-white/40 text-xs uppercase tracking-widest mt-1">Rating</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEARCH / BOOKING BAR ===== -->
+    <section id="search" class="bg-dark-3 border-y border-white/5 py-8" style="background:#111115;">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-6">
+                <span class="text-red-500 text-xs tracking-[4px] uppercase font-bold">Quick Booking</span>
+                <h2 class="font-cond font-black text-white text-3xl tracking-wide mt-1">Find Your Perfect Ride</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                <div>
+                    <label class="text-white/40 text-xs uppercase tracking-widest block mb-2">Car Type</label>
+                    <select class="search-input w-full rounded-lg px-4 py-3 text-sm">
+                        <option>Any Type</option>
+                        <option>Sedan</option>
+                        <option>SUV</option>
+                        <option>Sports</option>
+                        <option>Luxury</option>
+                        <option>Van / MPV</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-white/40 text-xs uppercase tracking-widest block mb-2">Pick-up City</label>
+                    <select class="search-input w-full rounded-lg px-4 py-3 text-sm">
+                        <option>Dhaka</option>
+                        <option>Chittagong</option>
+                        <option>Sylhet</option>
+                        <option>Rajshahi</option>
+                        <option>Cox's Bazar</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-white/40 text-xs uppercase tracking-widest block mb-2">Pick-up Date</label>
+                    <input type="date" class="search-input w-full rounded-lg px-4 py-3 text-sm" />
+                </div>
+                <div>
+                    <label class="text-white/40 text-xs uppercase tracking-widest block mb-2">Return Date</label>
+                    <input type="date" class="search-input w-full rounded-lg px-4 py-3 text-sm" />
+                </div>
+                <div>
+                    <label class="text-white/40 text-xs uppercase tracking-widest block mb-2">Budget /day</label>
+                    <select class="search-input w-full rounded-lg px-4 py-3 text-sm">
+                        <option>Any Budget</option>
+                        <option>Under ৳3,000</option>
+                        <option>৳3,000–৳6,000</option>
+                        <option>৳6,000–৳12,000</option>
+                        <option>Above ৳12,000</option>
+                    </select>
+                </div>
+                <div class="flex items-end">
+                    <button
+                        class="btn-glow bg-red-500 hover:bg-red-600 text-white w-full py-3 font-bold text-sm tracking-widest uppercase rounded-lg">
+                        Search 🔍
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="bg-red-600 py-3 overflow-hidden whitespace-nowrap">
+        <div class="marquee-track inline-flex">
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">🚗 Free Delivery</span>
+            <span class="mx-4 text-red-200">✦</span>
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">🛡️ Full Insurance</span>
+            <span class="mx-4 text-red-200">✦</span>
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">⚡ Instant Booking</span>
+            <span class="mx-4 text-red-200">✦</span>
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">📍 GPS Included</span>
+            <span class="mx-4 text-red-200">✦</span>
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">🔑 Keyless Entry</span>
+            <span class="mx-4 text-red-200">✦</span>
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">🚗 Free Delivery</span>
+            <span class="mx-4 text-red-200">✦</span>
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">🛡️ Full Insurance</span>
+            <span class="mx-4 text-red-200">✦</span>
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">⚡ Instant Booking</span>
+            <span class="mx-4 text-red-200">✦</span>
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">📍 GPS Included</span>
+            <span class="mx-4 text-red-200">✦</span>
+            <span class="mx-8 text-white text-xs font-bold tracking-[4px] uppercase">🔑 Keyless Entry</span>
+            <span class="mx-4 text-red-200">✦</span>
+        </div>
+    </div>
+
+    <!-- ===== FLEET ===== -->
+    <section id="fleet" class="py-24" style="background:#0d0d10;">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-end justify-between mb-14 flex-wrap gap-6">
+                <div>
+                    <span class="text-red-500 text-xs tracking-[4px] uppercase font-bold block mb-3">Our
+                        Fleet</span>
+                    <h2 class="font-cond font-black text-white leading-none"
+                        style="font-size:clamp(2rem,4vw,3.5rem); letter-spacing:-1px;">
+                        CHOOSE YOUR <span class="text-red-500 italic">RIDE</span>
+                    </h2>
+                    <div class="red-line mt-4"></div>
+                </div>
+                <a href="#search"
+                    class="border border-red-500/50 text-red-400 hover:bg-red-500 hover:text-white text-xs px-5 py-2.5 font-bold tracking-widest uppercase transition-all">
+                    View All Cars →
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Car 1 -->
+                <div class="car-card rounded-2xl overflow-hidden"
+                    style="background:#111115; border:1px solid rgba(255,255,255,0.06);">
+                    <div class="overflow-hidden h-52 relative">
+                        <img class="car-img w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&q=80"
+                            alt="BMW 5 Series" />
+                        <div
+                            class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-3 py-1 tracking-widest uppercase">
+                            Premium</div>
+                        <div class="absolute top-3 right-3 bg-black/70 text-white text-xs px-3 py-1">✅ Available
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-white/30 text-xs uppercase tracking-widest mb-1">Sedan · Automatic</div>
+                        <h3 class="font-cond font-bold text-white text-xl mb-3">BMW 5 Series</h3>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">5</div>
+                                <div class="text-white/30 text-xs">Seats</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">Auto</div>
+                                <div class="text-white/30 text-xs">Trans</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">AC</div>
+                                <div class="text-white/30 text-xs">Climate</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-cond font-black text-red-500 text-2xl">৳ 8,500</span>
+                                <span class="text-white/30 text-xs"> /day</span>
+                            </div>
+                            <a href="#search"
+                                class="bg-red-500 hover:bg-red-600 text-white text-xs px-5 py-2.5 font-bold tracking-wider uppercase transition-colors">
+                                Rent Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-card rounded-2xl overflow-hidden"
+                    style="background:#111115; border:1px solid rgba(255,255,255,0.06);">
+                    <div class="overflow-hidden h-52 relative">
+                        <img class="car-img w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&q=80"
+                            alt="Toyota Land Cruiser" />
+                        <div
+                            class="absolute top-3 left-3 bg-white text-black text-xs font-bold px-3 py-1 tracking-widest uppercase">
+                            SUV</div>
+                        <div class="absolute top-3 right-3 bg-black/70 text-white text-xs px-3 py-1">✅ Available
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-white/30 text-xs uppercase tracking-widest mb-1">SUV · Automatic</div>
+                        <h3 class="font-cond font-bold text-white text-xl mb-3">Toyota Land Cruiser</h3>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">7</div>
+                                <div class="text-white/30 text-xs">Seats</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">4WD</div>
+                                <div class="text-white/30 text-xs">Drive</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">AC</div>
+                                <div class="text-white/30 text-xs">Climate</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-cond font-black text-red-500 text-2xl">৳ 12,000</span>
+                                <span class="text-white/30 text-xs"> /day</span>
+                            </div>
+                            <a href="#search"
+                                class="bg-red-500 hover:bg-red-600 text-white text-xs px-5 py-2.5 font-bold tracking-wider uppercase transition-colors">
+                                Rent Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-card rounded-2xl overflow-hidden"
+                    style="background:#111115; border:1px solid rgba(255,255,255,0.06);">
+                    <div class="overflow-hidden h-52 relative">
+                        <img class="car-img w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&q=80"
+                            alt="Mercedes E-Class" />
+                        <div
+                            class="absolute top-3 left-3 bg-yellow-400 text-black text-xs font-bold px-3 py-1 tracking-widest uppercase">
+                            Luxury</div>
+                        <div class="absolute top-3 right-3 bg-black/70 text-white text-xs px-3 py-1">✅ Available
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-white/30 text-xs uppercase tracking-widest mb-1">Sedan · Automatic</div>
+                        <h3 class="font-cond font-bold text-white text-xl mb-3">Mercedes E-Class</h3>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">5</div>
+                                <div class="text-white/30 text-xs">Seats</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">Auto</div>
+                                <div class="text-white/30 text-xs">Trans</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">GPS</div>
+                                <div class="text-white/30 text-xs">Nav</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-cond font-black text-red-500 text-2xl">৳ 15,000</span>
+                                <span class="text-white/30 text-xs"> /day</span>
+                            </div>
+                            <a href="#search"
+                                class="bg-red-500 hover:bg-red-600 text-white text-xs px-5 py-2.5 font-bold tracking-wider uppercase transition-colors">
+                                Rent Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="car-card rounded-2xl overflow-hidden"
+                    style="background:#111115; border:1px solid rgba(255,255,255,0.06);">
+                    <div class="overflow-hidden h-52 relative">
+                        <img class="car-img w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&q=80"
+                            alt="Toyota Hiace" />
+                        <div
+                            class="absolute top-3 left-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 tracking-widest uppercase">
+                            Van</div>
+                        <div class="absolute top-3 right-3 bg-black/70 text-white text-xs px-3 py-1">✅ Available
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-white/30 text-xs uppercase tracking-widest mb-1">Van · Manual</div>
+                        <h3 class="font-cond font-bold text-white text-xl mb-3">Toyota Hiace</h3>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">12</div>
+                                <div class="text-white/30 text-xs">Seats</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">Man</div>
+                                <div class="text-white/30 text-xs">Trans</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">AC</div>
+                                <div class="text-white/30 text-xs">Climate</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-cond font-black text-red-500 text-2xl">৳ 6,500</span>
+                                <span class="text-white/30 text-xs"> /day</span>
+                            </div>
+                            <a href="#search"
+                                class="bg-red-500 hover:bg-red-600 text-white text-xs px-5 py-2.5 font-bold tracking-wider uppercase transition-colors">
+                                Rent Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="car-card rounded-2xl overflow-hidden"
+                    style="background:#111115; border:1px solid rgba(255,255,255,0.06);">
+                    <div class="overflow-hidden h-52 relative">
+                        <img class="car-img w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80"
+                            alt="Porsche 911" />
+                        <div
+                            class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-3 py-1 tracking-widest uppercase">
+                            Sports</div>
+                        <div class="absolute top-3 right-3 bg-black/70 text-white text-xs px-3 py-1">✅ Available
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-white/30 text-xs uppercase tracking-widest mb-1">Sports · Automatic</div>
+                        <h3 class="font-cond font-bold text-white text-xl mb-3">Porsche 911</h3>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">2</div>
+                                <div class="text-white/30 text-xs">Seats</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">PDK</div>
+                                <div class="text-white/30 text-xs">Trans</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">GPS</div>
+                                <div class="text-white/30 text-xs">Nav</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-cond font-black text-red-500 text-2xl">৳ 25,000</span>
+                                <span class="text-white/30 text-xs"> /day</span>
+                            </div>
+                            <a href="#search"
+                                class="bg-red-500 hover:bg-red-600 text-white text-xs px-5 py-2.5 font-bold tracking-wider uppercase transition-colors">
+                                Rent Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="car-card rounded-2xl overflow-hidden"
+                    style="background:#111115; border:1px solid rgba(255,255,255,0.06);">
+                    <div class="overflow-hidden h-52 relative">
+                        <img class="car-img w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&q=80"
+                            alt="Honda CR-V" />
+                        <div
+                            class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-3 py-1 tracking-widest uppercase">
+                            Economy</div>
+                        <div class="absolute top-3 right-3 bg-black/70 text-white text-xs px-3 py-1">✅ Available
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-white/30 text-xs uppercase tracking-widest mb-1">SUV · Automatic</div>
+                        <h3 class="font-cond font-bold text-white text-xl mb-3">Honda CR-V</h3>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">5</div>
+                                <div class="text-white/30 text-xs">Seats</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">CVT</div>
+                                <div class="text-white/30 text-xs">Trans</div>
+                            </div>
+                            <div class="text-center bg-white/5 rounded-lg p-2">
+                                <div class="text-white text-xs font-bold">AC</div>
+                                <div class="text-white/30 text-xs">Climate</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-cond font-black text-red-500 text-2xl">৳ 4,500</span>
+                                <span class="text-white/30 text-xs"> /day</span>
+                            </div>
+                            <a href="#search"
+                                class="bg-red-500 hover:bg-red-600 text-white text-xs px-5 py-2.5 font-bold tracking-wider uppercase transition-colors">
+                                Rent Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="py-24" style="background:#0a0a0a;">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <span class="text-red-500 text-xs tracking-[4px] uppercase font-bold block mb-3">What We
+                    Offer</span>
+                <h2 class="font-cond font-black text-white leading-none mb-4"
+                    style="font-size:clamp(2rem,4vw,3.2rem); letter-spacing:-1px;">
+                    OUR <span class="text-red-500 italic">SERVICES</span>
+                </h2>
+                <div class="red-line mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature-box p-7 rounded-2xl border border-white/5 hover:border-red-500/20 transition-all"
+                    style="background:#111115;">
+                    <div class="feat-icon w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all"
+                        style="background:rgba(230,51,41,0.1);">
+                        <i class="bi bi-car-front-fill text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-3">Self Drive</h3>
+                    <p class="text-white/40 text-sm leading-relaxed">Take the wheel yourself. Valid driving license
+                        required. Available 24/7 across all cities.</p>
+                </div>
+                <div class="feature-box p-7 rounded-2xl border border-white/5 hover:border-red-500/20 transition-all"
+                    style="background:#111115;">
+                    <div class="feat-icon w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all"
+                        style="background:rgba(230,51,41,0.1);">
+                        <i class="bi bi-person-fill text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-3">With Driver</h3>
+                    <p class="text-white/40 text-sm leading-relaxed">Relax and enjoy the ride with our professional,
+                        verified drivers available round the clock.</p>
+                </div>
+                <div class="feature-box p-7 rounded-2xl border border-white/5 hover:border-red-500/20 transition-all"
+                    style="background:#111115;">
+                    <div class="feat-icon w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all"
+                        style="background:rgba(230,51,41,0.1);">
+                        <i class="bi bi-airplane-fill text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-3">Airport Transfer</h3>
+                    <p class="text-white/40 text-sm leading-relaxed">Seamless airport pickups and drop-offs. Flight
+                        tracking included, no extra waiting charges.</p>
+                </div>
+                <div class="feature-box p-7 rounded-2xl border border-white/5 hover:border-red-500/20 transition-all"
+                    style="background:#111115;">
+                    <div class="feat-icon w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all"
+                        style="background:rgba(230,51,41,0.1);">
+                        <i class="bi bi-calendar-check-fill text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-3">Corporate Rental</h3>
+                    <p class="text-white/40 text-sm leading-relaxed">Monthly packages and fleet solutions for
+                        businesses. Dedicated account manager included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY US ===== -->
+    <section id="why" class="py-24" style="background:#0d0d10;">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-red-500 text-xs tracking-[4px] uppercase font-bold block mb-4">Why
+                        DriveX</span>
+                    <h2 class="font-cond font-black text-white leading-none mb-6"
+                        style="font-size:clamp(2rem,4vw,3.2rem); letter-spacing:-1px;">
+                        THE <span class="text-red-500 italic">SMARTER</span><br />WAY TO RENT
+                    </h2>
+                    <div class="red-line mb-8"></div>
+                    <p class="text-white/50 text-base leading-relaxed mb-10">We've redefined car rental in
+                        Bangladesh. No hidden fees, no paperwork hassle, no waiting in queues. Just pick your car
+                        and go.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3 p-4 rounded-xl"
+                            style="background:#111115; border:1px solid rgba(255,255,255,0.05);">
+                            <span class="text-green-400 text-xl mt-0.5">✓</span>
+                            <div>
+                                <div class="text-white font-semibold text-sm">Zero Hidden Fees</div>
+                                <div class="text-white/30 text-xs mt-1">Price you see is price you pay</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-4 rounded-xl"
+                            style="background:#111115; border:1px solid rgba(255,255,255,0.05);">
+                            <span class="text-green-400 text-xl mt-0.5">✓</span>
+                            <div>
+                                <div class="text-white font-semibold text-sm">Free Cancellation</div>
+                                <div class="text-white/30 text-xs mt-1">Cancel up to 24hrs before</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-4 rounded-xl"
+                            style="background:#111115; border:1px solid rgba(255,255,255,0.05);">
+                            <span class="text-green-400 text-xl mt-0.5">✓</span>
+                            <div>
+                                <div class="text-white font-semibold text-sm">Doorstep Delivery</div>
+                                <div class="text-white/30 text-xs mt-1">Car delivered to your location</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-4 rounded-xl"
+                            style="background:#111115; border:1px solid rgba(255,255,255,0.05);">
+                            <span class="text-green-400 text-xl mt-0.5">✓</span>
+                            <div>
+                                <div class="text-white font-semibold text-sm">Full Insurance</div>
+                                <div class="text-white/30 text-xs mt-1">Comprehensive coverage included</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="stat-card rounded-2xl p-8 text-center">
+                        <div class="font-cond font-black text-red-500 mb-2" style="font-size:3.5rem; line-height:1;">
+                            500+</div>
+                        <div class="text-white/40 text-xs uppercase tracking-widest">Premium Vehicles</div>
+                    </div>
+                    <div class="stat-card rounded-2xl p-8 text-center mt-8">
+                        <div class="font-cond font-black text-red-500 mb-2" style="font-size:3.5rem; line-height:1;">
+                            15K+</div>
+                        <div class="text-white/40 text-xs uppercase tracking-widest">Happy Customers</div>
+                    </div>
+                    <div class="stat-card rounded-2xl p-8 text-center">
+                        <div class="font-cond font-black text-red-500 mb-2" style="font-size:3.5rem; line-height:1;">6
+                        </div>
+                        <div class="text-white/40 text-xs uppercase tracking-widest">Cities Covered</div>
+                    </div>
+                    <div class="stat-card rounded-2xl p-8 text-center mt-8">
+                        <div class="font-cond font-black text-red-500 mb-2" style="font-size:3.5rem; line-height:1;">
+                            4.9★</div>
+                        <div class="text-white/40 text-xs uppercase tracking-widest">Average Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="py-24" style="background:#0a0a0a;">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <span class="text-red-500 text-xs tracking-[4px] uppercase font-bold block mb-3">Customer
+                    Reviews</span>
+                <h2 class="font-cond font-black text-white leading-none mb-4"
+                    style="font-size:clamp(2rem,4vw,3.2rem); letter-spacing:-1px;">
+                    WHAT CLIENTS <span class="text-red-500 italic">SAY</span>
+                </h2>
+                <div class="red-line mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="testi-card rounded-2xl p-7" style="background:#111115;">
+                    <div class="text-yellow-400 tracking-widest mb-4">★★★★★</div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-6 italic">"Rented the BMW 5 Series for a
+                        corporate event. Flawless experience from booking to return. The car was spotless and
+                        delivered on time. Will use DriveX every time!"</p>
+                    <div class="flex items-center gap-3">
+                        <img class="w-11 h-11 rounded-full object-cover border-2 border-red-500/30"
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=70" alt="Arif" />
+                        <div>
+                            <div class="text-white font-bold text-sm">Arif Hossain</div>
+                            <div class="text-white/30 text-xs">CEO · Dhaka</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card rounded-2xl p-7" style="background:#111115;">
+                    <div class="text-yellow-400 tracking-widest mb-4">★★★★★</div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-6 italic">"Used the airport transfer service
+                        twice now. Always on time, cars are clean and the drivers are professional. The pricing is
+                        very fair with zero surprises."</p>
+                    <div class="flex items-center gap-3">
+                        <img class="w-11 h-11 rounded-full object-cover border-2 border-red-500/30"
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=70" alt="Nadia" />
+                        <div>
+                            <div class="text-white font-bold text-sm">Nadia Rahman</div>
+                            <div class="text-white/30 text-xs">Marketing Manager · Chittagong</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card rounded-2xl p-7" style="background:#111115;">
+                    <div class="text-yellow-400 tracking-widest mb-4">★★★★★</div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-6 italic">"Rented the Land Cruiser for a
+                        Cox's Bazar trip with family. 7 seats, smooth ride, great GPS. Booking was instant and the
+                        free cancellation policy gave us peace of mind."</p>
+                    <div class="flex items-center gap-3">
+                        <img class="w-11 h-11 rounded-full object-cover border-2 border-red-500/30"
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=70" alt="Karim" />
+                        <div>
+                            <div class="text-white font-bold text-sm">Karim Uddin</div>
+                            <div class="text-white/30 text-xs">Engineer · Sylhet</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="py-28 text-center relative overflow-hidden"
+        style="background:linear-gradient(135deg, #c8281f 0%, #e63329 50%, #a01f18 100%);">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600&q=60'); background-size:cover; background-position:center;">
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto px-6">
+            <span class="text-white/70 text-xs tracking-[5px] uppercase font-bold block mb-4">Limited Time
+                Offer</span>
+            <h2 class="font-cond font-black text-white leading-none mb-6"
+                style="font-size:clamp(2.5rem,6vw,5rem); letter-spacing:-2px;">
+                GET 20% OFF<br /><span class="italic text-white/80">YOUR FIRST RENTAL</span>
+            </h2>
+            <p class="text-white/70 text-base mb-10 max-w-md mx-auto leading-relaxed">Use code <span
+                    class="bg-white/20 text-white font-black px-3 py-1 rounded font-mono">DRIVEX20</span> at
+                checkout. Valid for new customers only.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#search"
+                    class="bg-white text-red-600 hover:bg-gray-100 px-10 py-4 font-black text-sm tracking-widest uppercase transition-all hover:-translate-y-1 shadow-xl">
+                    Book Now & Save
+                </a>
+                <a href="tel:+8801700000000"
+                    class="border-2 border-white/50 hover:border-white text-white px-10 py-4 font-bold text-sm tracking-widest uppercase transition-all">
+                    📞 Call Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contact" style="background:#060608; border-top:1px solid rgba(255,255,255,0.05);">
+        <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="bg-red-500 text-white font-cond font-black text-lg px-3 py-1 tracking-widest">
+                            DRIVE</div>
+                        <div class="font-cond font-black text-xl tracking-[4px] text-white">X</div>
+                    </div>
+                    <div class="text-white/30 text-xs tracking-[3px] uppercase mb-4">Premium Car Rental · Est. 2015
+                    </div>
+                    <p class="text-white/40 text-sm leading-relaxed mb-5">Bangladesh's most trusted car rental
+                        service. 500+ vehicles, 6 cities, zero hassle.</p>
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-9 h-9 border border-white/10 hover:border-red-500 flex items-center justify-center text-white/40 hover:text-red-400 transition-all rounded-lg"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 border border-white/10 hover:border-red-500 flex items-center justify-center text-white/40 hover:text-red-400 transition-all rounded-lg"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 border border-white/10 hover:border-red-500 flex items-center justify-center text-white/40 hover:text-red-400 transition-all rounded-lg"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 border border-white/10 hover:border-red-500 flex items-center justify-center text-white/40 hover:text-red-400 transition-all rounded-lg"><i
+                                class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-red-500 text-xs tracking-[3px] uppercase font-bold mb-5">Our Fleet</div>
+                    <ul class="space-y-3">
+                        <li><a href="#fleet"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>Sedans</a></li>
+                        <li><a href="#fleet"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>SUVs</a></li>
+                        <li><a href="#fleet"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>Luxury Cars</a></li>
+                        <li><a href="#fleet"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>Sports Cars</a></li>
+                        <li><a href="#fleet"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>Vans & MPVs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-red-500 text-xs tracking-[3px] uppercase font-bold mb-5">Services</div>
+                    <ul class="space-y-3">
+                        <li><a href="#services"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>Self Drive</a></li>
+                        <li><a href="#services"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>With Driver</a></li>
+                        <li><a href="#services"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>Airport Transfer</a></li>
+                        <li><a href="#services"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>Corporate Rental</a></li>
+                        <li><a href="#services"
+                                class="text-white/40 hover:text-white text-sm flex items-center gap-2 transition-colors"><i
+                                    class="bi bi-chevron-right text-red-500 text-xs"></i>Wedding Cars</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-red-500 text-xs tracking-[3px] uppercase font-bold mb-5">Contact Us</div>
+                    <div class="space-y-4">
+                        <div class="flex gap-3 text-sm text-white/40"><i
+                                class="bi bi-geo-alt-fill text-red-500 mt-0.5 flex-shrink-0"></i><span>House 12,
+                                Road 7, Banani, Dhaka 1213</span></div>
+                        <div class="flex gap-3 text-sm text-white/40"><i
+                                class="bi bi-telephone-fill text-red-500 flex-shrink-0"></i><a href="tel:+8801700000000"
+                                class="hover:text-white transition-colors">+880
+                                1700-000000</a></div>
+                        <div class="flex gap-3 text-sm text-white/40"><i
+                                class="bi bi-envelope-fill text-red-500 flex-shrink-0"></i><a
+                                href="mailto:rent@drivex.com"
+                                class="hover:text-white transition-colors">rent@drivex.com</a></div>
+                        <div class="flex gap-3 text-sm text-white/40"><i
+                                class="bi bi-clock-fill text-red-500 flex-shrink-0"></i><span>24/7 — Always
+                                Open</span></div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-white/5 pt-8 flex flex-wrap justify-between items-center gap-4 text-xs text-white/20">
+                <span>© 2025 DriveX Premium Car Rental. All rights reserved.</span>
+                <span>Made with ❤️ in Bangladesh</span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
